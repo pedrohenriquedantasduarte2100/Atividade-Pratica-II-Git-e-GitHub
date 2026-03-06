@@ -10,3 +10,9 @@ if __name__ == " __main__ ":
     print (" Sistema iniciado com sucesso .")
     
 
+def mae ( v1 , v2 ) :
+    validar_vetores ( v1 , v2 )
+    return sum( abs( a - b ) for a , b in zip ( v1 , v2 ) ) / len ( v1 )
+def mse ( v1 , v2 ) :
+    validar_vetores ( v1 , v2 )
+    return sum (( a - b ) ** 2 for a , b in zip ( v1 , v2 ) ) / len ( v1 )
